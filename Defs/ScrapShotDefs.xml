@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+<Defs>
+  <!--AmmoCategoryDef-->
+  <CombatExtended.AmmoCategoryDef>
+    <defName>ScrapShot</defName>
+    <label>scrapshot</label>
+	<labelShort>scrap</labelShort>
+    <description>Filled with small fragments of scrap ammunition. Slower and weaker than buckshot, but cheaper and faster to produce.</description>
+  </CombatExtended.AmmoCategoryDef> 
+  
+  <!--AmmoDefs-->
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="12GaugeBase">
+    <defName>Ammo_12Gauge_Scrap</defName>
+    <label>12 gauge shell (Scrap)</label>
+    <graphicData>
+      <texPath>Things/Ammo/Shotgun/ScrapShot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.08</MarketValue>
+    </statBases>
+    <ammoClass>ScrapShot</ammoClass>
+    <cookOffProjectile>Bullet_12Gauge_Scrap</cookOffProjectile>
+  </ThingDef>
+  
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="20GaugeBase">
+    <defName>Ammo_20Gauge_Scrap</defName>
+    <label>20 gauge shell (Scrap)</label>
+    <graphicData>
+      <texPath>Things/Ammo/Shotgun/ScrapShot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.09</MarketValue>
+    </statBases>
+    <ammoClass>ScrapShot</ammoClass>
+    <cookOffProjectile>Bullet_20Gauge_Scrap</cookOffProjectile>
+  </ThingDef>
+  
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="23x75mmRBase">
+    <defName>Ammo_23x75mmR_Scrap</defName>
+    <label>23x75mmR shell (Scrap)</label>
+    <graphicData>
+      <texPath>Things/Ammo/Shotgun/ScrapShot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.09</MarketValue>
+    </statBases>
+    <ammoClass>ScrapShot</ammoClass>
+    <cookOffProjectile>Bullet_23x75mmR_Scrap</cookOffProjectile>
+  </ThingDef>
+  
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="410BoreBase">
+    <defName>Ammo_410Bore_Scrap</defName>
+    <label>.410 Bore shell (Scrap)</label>
+    <graphicData>
+      <texPath>Things/Ammo/Shotgun/ScrapShot</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.03</MarketValue>
+    </statBases>
+    <ammoClass>ScrapShot</ammoClass>
+    <cookOffProjectile>Bullet_410Bore_Scrap</cookOffProjectile>
+  </ThingDef>
+  
+  <!--Projectile Properties-->
+  <ThingDef ParentName="Base12GaugeBullet">
+    <defName>Bullet_12Gauge_Scrap</defName>
+    <label>scrapshot pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shotgun_Pellet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+	  <speed>58</speed>
+      <damageAmountBase>6</damageAmountBase>
+      <pelletCount>9</pelletCount>
+      <armorPenetrationSharp>3.2</armorPenetrationSharp>
+      <armorPenetrationBlunt>3.62</armorPenetrationBlunt>
+      <spreadMult>21.4</spreadMult>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="Base20GaugeBullet">
+		<defName>Bullet_20Gauge_Scrap</defName>
+		<label>scrapshot pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+		    <speed>58</speed>
+			<damageAmountBase>5</damageAmountBase>
+			<pelletCount>7</pelletCount>
+			<armorPenetrationBase>0.148</armorPenetrationBase>
+			<spreadMult>21.4</spreadMult>
+		</projectile>
+    </ThingDef>
+
+  <ThingDef ParentName="Base23x75mmRBullet">
+		<defName>Bullet_23x75mmR_Scrap</defName>
+		<label>scrapshot pellet</label>
+		<graphicData>
+			<texPath>Things/Projectile/Shotgun_Pellet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>58</speed>
+			<damageAmountBase>8</damageAmountBase>
+			<pelletCount>16</pelletCount>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationBlunt>3.184</armorPenetrationBlunt>
+			<spreadMult>21.4</spreadMult>
+		</projectile>
+	</ThingDef>
+	
+  <ThingDef ParentName="Base410BoreBullet">
+    <defName>Bullet_410Bore_Scrap</defName>
+    <label>scrapshot pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shotgun_Pellet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+	  <speed>58</speed>
+      <damageAmountBase>7</damageAmountBase> 
+      <pelletCount>5</pelletCount>
+      <armorPenetrationSharp>2.4</armorPenetrationSharp>
+      <armorPenetrationBlunt>4.336</armorPenetrationBlunt>
+      <spreadMult>21.4</spreadMult>
+    </projectile>
+  </ThingDef>
+	
+  <ThingDef ParentName="Base410BoreBullet">
+    <defName>Bullet_410Bore_Scrap_SB</defName>
+    <label>scrapshot pellet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Shotgun_Pellet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <speed>39</speed>
+      <damageAmountBase>6</damageAmountBase> 
+      <pelletCount>5</pelletCount>
+      <armorPenetrationSharp>1.84</armorPenetrationSharp>
+      <armorPenetrationBlunt>2.176</armorPenetrationBlunt>
+      <spreadMult>42.72</spreadMult>
+    </projectile>
+  </ThingDef>
+	
+  <!--RecipeDefs-->
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_12Gauge_Scrap</defName>
+    <label>make 12 gauge (Scrap) shell x200</label>
+    <description>Craft 200 12 gauge (Scrap) shells.</description>
+    <jobString>Making 12 gauge (Scrap) shells.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AmmoScrap</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AmmoScrap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_12Gauge_Scrap>200</Ammo_12Gauge_Scrap>
+    </products>
+    <workAmount>800</workAmount>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_20Gauge_Scrap</defName>
+    <label>make 20 gauge (Scrap) shell x200</label>
+    <description>Craft 200 20 gauge (Scrap) shells.</description>
+    <jobString>Making 20 gauge (Scrap) shells.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AmmoScrap</li>
+          </thingDefs>
+        </filter>
+        <count>65</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AmmoScrap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_20Gauge_Scrap>200</Ammo_20Gauge_Scrap>
+    </products>
+    <workAmount>2600</workAmount>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_23x75mmR_Scrap</defName>
+    <label>make 23x75mmR (Scrap) shell x200</label>
+    <description>Craft 200 23x75mmR (Scrap) shells.</description>
+    <jobString>Making 23x75mmR (Scrap) shells.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AmmoScrap</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AmmoScrap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_23x75mmR_Scrap>200</Ammo_23x75mmR_Scrap>
+    </products>
+    <workAmount>960</workAmount>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_410Bore_Scrap</defName>
+    <label>make .410 Bore (Scrap) shell x200</label>
+    <description>Craft 200 .410 Bore (Scrap) shells.</description>
+    <jobString>Making .410 Bore (Scrap) shells.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AmmoScrap</li>
+          </thingDefs>
+        </filter>
+        <count>18</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AmmoScrap</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_410Bore_Scrap>200</Ammo_410Bore_Scrap>
+    </products>
+    <workAmount>320</workAmount>
+  </RecipeDef>
+
+</Defs>

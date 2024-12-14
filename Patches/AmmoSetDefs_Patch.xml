@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+ 
+ <!--Patch Operation-->
+<Patch>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_12Gauge"]/ammoTypes</xpath>
+            <value>
+                <Ammo_12Gauge_Scrap>Bullet_12Gauge_Scrap</Ammo_12Gauge_Scrap>
+            </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_20Gauge"]/ammoTypes</xpath>
+            <value>
+                <Ammo_20Gauge_Scrap>Bullet_20Gauge_Scrap</Ammo_20Gauge_Scrap>
+            </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_23x75mmR"]/ammoTypes</xpath>
+            <value>
+                <Ammo_23x75mmR_Scrap>Bullet_23x75mmR_Scrap</Ammo_23x75mmR_Scrap>
+            </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore"]/ammoTypes</xpath>
+            <value>
+                <Ammo_410Bore_Scrap>Bullet_410Bore_Scrap</Ammo_410Bore_Scrap>
+            </value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_45Colt410Bore_SB"]/ammoTypes</xpath>
+            <value>
+                <Ammo_410Bore_Scrap>Bullet_410Bore_Scrap_SB</Ammo_410Bore_Scrap>
+            </value>
+</Operation>
+
+</Patch>

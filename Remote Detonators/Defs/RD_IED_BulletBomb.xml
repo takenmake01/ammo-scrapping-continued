@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  
+  
+  <ThingDef ParentName="RD_IEDBase">
+    <defName>RD_IED_BulletBomb</defName>
+    <label>IED ammo scrap</label>
+    <description>An improvised explosive device comprised primarily of scrap ammunition. It does not contain the trap mechanism, so you should detonate it manually.  Since it is hidden in the surrounding terrain, it cannot be placed adjacent to other traps.</description>
+    <graphicData>
+      <texPath>Building/RDIED_Bullet_5</texPath>
+      <drawSize>(1.75,1.75)</drawSize>
+    </graphicData>
+    <costList>
+      <AmmoScrap>200</AmmoScrap>
+	  <FSX>2</FSX>
+    </costList>
+    <comps>
+	
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.5</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+        <wickTicks>15</wickTicks>
+        <startWickOnDamageTaken>
+          <li>Bullet</li>
+          <li>Arrow</li>
+          <li>ArrowHighVelocity</li>
+        </startWickOnDamageTaken>
+      </li>
+	  
+	  <!--
+	  CE properties do not appear to be used for explosive traps.
+	  leaving this here in case that changes.
+	  
+	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
+		<damageAmountBase>56</damageAmountBase>
+		<explosiveDamageType>Bomb</explosiveDamageType>
+		<explosiveRadius>1.5</explosiveRadius>
+	  </li>
+	  -->
+
+	  <li Class="CombatExtended.CompProperties_Fragments">
+		<fragments>
+			<Fragment_Small>40</Fragment_Small>
+		</fragments>
+	  </li>
+	  
+    </comps>
+    <specialDisplayRadius>3.9</specialDisplayRadius>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,14 @@
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CEBulletBomb\Source\PermanoobLibrary\bin\Release\PermanoobLibrary.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CEBulletBomb\Source\PermanoobLibrary\bin\Release\PermanoobLibrary.pdb
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CEBulletBomb\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.csproj.AssemblyReference.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CEBulletBomb\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.csproj.CoreCompileInputs.cache
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CEBulletBomb\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.dll
+D:\Games\Steam\steamapps\common\RimWorld\Mods\CEBulletBomb\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Source\PermanoobLibrary\bin\Release\PermanoobLibrary.dll
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Source\PermanoobLibrary\bin\Release\PermanoobLibrary.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.csproj.AssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.csproj.CoreCompileInputs.cache
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.dll
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Source\PermanoobLibrary\obj\Release\PermanoobLibrary.pdb
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Assemblies\PermanoobLibrary.dll
+D:\Steam\steamapps\common\RimWorld\Mods\AmmoScrapping\Assemblies\PermanoobLibrary.pdb

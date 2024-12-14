@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Ammo Scrapping (CE) (Continued)</name>
+	<packageId>permanoob.ammoscrapping</packageId>
+	<author>Permanoob OG, takenmake</author>
+	<supportedVersions>
+    	<li>1.5</li>
+	</supportedVersions>
+	<description> 
+
+Adds a new item: ammo scrap, which can be crafted out of unwanted ammo at a loading bench.
+
+It can then be smelted back into steel (at the cost of some of its total mass) or used in a few crafting recipes which use 100% of the material.
+
+Ammo scrap IEDs are equivalent in power to a frag grenade. There is a trap IED as well as a non-trap version if you have the Remote Detonator mod loaded.
+
+"Scrapshot" shotgun ammunition is similar to buckshot, but is cheaper and faster to produce at the cost of lower speed and damage.
+
+Ammo scrap produced is proportional to the mass of the ammo used, and can be crafted from any ammo from the categories: Pistol, Rifle, Shotgun, Advanced, and High Caliber. There are two recipes: 1kg and 10kg. High Caliber ammunition is only included in the 10kg recipe to prevent wasting materials. All ingredients are disabled by default in the Bills menu.
+
+~
+
+Code and original mod by Permanoob OG.
+
+Graphics by Serina on CE Discord.
+
+Update by takenmake/1011 1110 1110 1111
+	
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>ceteam.combatextended</packageId>
+			<displayName>Combat Extended</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=1631756268</steamWorkshopUrl>
+			<downloadUrl>https://github.com/CombatExtended-Continued/CombatExtended/releases</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+	<li>ceteam.combatextended</li>
+	<li>tikubonn.RemoteDetonator</li>
+	</loadAfter>
+	
+</ModMetaData>

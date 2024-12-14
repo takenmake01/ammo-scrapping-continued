@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>BreakDownAmmo10Kg</defName>
+		<label>break down ammo 10kg</label>
+		<description>Break down ammunition for scrap.</description>
+		<jobString>Breaking down ammo for scrap.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>5000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>PermanoobLibrary.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>AmmoPistols</li>
+						<li>AmmoRifles</li>
+						<li>AmmoShotguns</li>
+						<li>AmmoAdvanced</li>
+						<li>AmmoHighCaliber</li>
+					</categories>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>AmmoPistols</li>
+				<li>AmmoRifles</li>
+				<li>AmmoShotguns</li>
+				<li>AmmoAdvanced</li>
+				<li>AmmoHighCaliber</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Ammo_12Gauge_Scrap</li>
+				<li>Ammo_20Gauge_Scrap</li>
+				<li>Ammo_23x75mmR_Scrap</li>
+				<li>Ammo_410Bore_Scrap</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>AmmoPistols</li>
+				<li>AmmoRifles</li>
+				<li>AmmoShotguns</li>
+				<li>AmmoAdvanced</li>
+				<li>AmmoHighCaliber</li>
+			</categories>
+			<disallowedCategories>
+				<li>AmmoPistols</li>
+				<li>AmmoRifles</li>
+				<li>AmmoShotguns</li>
+				<li>AmmoAdvanced</li>
+				<li>AmmoHighCaliber</li>
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<AmmoScrap>1000</AmmoScrap>
+		</products>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>BreakDownAmmo1Kg</defName>
+		<label>break down ammo 1kg</label>
+		<description>Break down ammunition for scrap.</description>
+		<jobString>Breaking down ammo for scrap.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>1000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>PermanoobLibrary.IngredientValueGetter_Mass</ingredientValueGetterClass>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>AmmoPistols</li>
+						<li>AmmoRifles</li>
+						<li>AmmoShotguns</li>
+						<li>AmmoAdvanced</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<categories>
+				<li>AmmoPistols</li>
+				<li>AmmoRifles</li>
+				<li>AmmoShotguns</li>
+				<li>AmmoAdvanced</li>
+			</categories>
+			<disallowedThingDefs>
+				<li>Ammo_12Gauge_Scrap</li>
+				<li>Ammo_20Gauge_Scrap</li>
+				<li>Ammo_23x75mmR_Scrap</li>
+				<li>Ammo_410Bore_Scrap</li>
+			</disallowedThingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>AmmoPistols</li>
+				<li>AmmoRifles</li>
+				<li>AmmoShotguns</li>
+				<li>AmmoAdvanced</li>
+			</categories>
+			<disallowedCategories>
+				<li>AmmoPistols</li>
+				<li>AmmoRifles</li>
+				<li>AmmoShotguns</li>
+				<li>AmmoAdvanced</li>
+			</disallowedCategories>
+		</defaultIngredientFilter>
+		<products>
+			<AmmoScrap>100</AmmoScrap>
+		</products>
+		<recipeUsers>
+			<li>AmmoBench</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>ExtractMetalFromAmmoScrap</defName>
+		<label>smelt metal from ammo scrap</label>
+		<description>Use heat and strong electromagnets to extract useful metal from ammo scrap. Some material will be lost in the process.</description>
+		<jobString>Smelting metal from ammo scrap.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AmmoScrap</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<Steel>16</Steel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AmmoScrap</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+			<li>ElectricSmelter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	</Defs>
