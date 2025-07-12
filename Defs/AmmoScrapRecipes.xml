@@ -58,7 +58,7 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
-			<AmmoScrap>1000</AmmoScrap>
+			<AmmoScrap>100</AmmoScrap>
 		</products>
 		<recipeUsers>
 			<li>AmmoBench</li>
@@ -118,7 +118,7 @@
 			</disallowedCategories>
 		</defaultIngredientFilter>
 		<products>
-			<AmmoScrap>100</AmmoScrap>
+			<AmmoScrap>10</AmmoScrap>
 		</products>
 		<recipeUsers>
 			<li>AmmoBench</li>
